@@ -1,0 +1,72 @@
+* {
+  font-family: Roboto , Arial;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  /* background-color: rgb(63, 63, 63) !important; 
+  color: aliceblue !important; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+
+  background-color: rgb(255, 255, 255);
+  margin: 50px 170px 0px 170px;
+  /* padding-bottom: px; */
+
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow-x: hidden; /* скрывает горизонтальную прокрутку */
+
+}
+
+
+
+.main_div_content_bckg_img {
+  background: #fff;
+  background-image: linear-gradient(90deg, #eee 2px, transparent 0), linear-gradient(180deg, #eee 2px, transparent 0);
+  background-position: 0 10px;
+  background-size: 43px 57px;
+  z-index: -1;
+  height: 4000px;
+
+
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.FOR_TIME ,
+.FOR_TIME p {
+  display: none;
+}
+
+@media all and (max-width: 1900px) {
+  .FOR_TIME {
+    display: flex;
+    justify-content: center;
+  
+    margin: -100px -300px -100px -300px;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background-color: rgb(59, 61, 61);
+    z-index: 10000;
+  }
+  .FOR_TIME p {
+    display: block;
+    margin-top: 300px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+}

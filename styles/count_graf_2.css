@@ -1,0 +1,161 @@
+.section2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  .diagram2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+  }
+  
+  .dgBLock2 {
+    width: 20px;
+    margin: 0px 30px;
+    padding: 0px;
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    /* transition: all 2s; */
+  }
+  
+  .column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+  
+  .dgBLock2:first-child .column2 {
+    background: #6750fb;
+    height: calc(350px / 100 * 3.2 * 6); /*3.2% but 5 for size*/
+    animation: appFir2 2s 1;
+  }
+  
+  .dgBLock2:nth-child(2) .column2 {
+    background: #00ccff;
+    height: calc(350px / 100 * 22.1 * 2.5); /*22.1% but 2.5 for size*/
+    animation: appSec2 2s 1;
+  }
+  
+  .dgBLock2:nth-child(3) .column2 {
+    background: #6750fb;
+    height: calc(350px / 100 * 22.1 * 2.5); /*22.1% but 2.5 for size*/
+    animation: appThi2 2s 1;
+  }
+  
+  .dgBLock2:last-child .column2 {
+    background: #00ccff;
+    height: calc(350px / 100 * 52.6 * 2); /*52.6% but 1.5 for size*/
+    animation: appFou2 2s 1;
+  }
+  
+  .column2 span {
+    transform: rotate(-90deg);
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    animation: app 3s 1;
+    transition: all 1s;
+  }
+  
+  .proj2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 1s;
+  }
+  
+  @keyframes appFir2 {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 3.2 * 6); /*animation*/
+    }
+  }
+  
+  @keyframes appSec2 {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 22.1 * 2.5); /*animation*/
+    }
+  }
+  
+  @keyframes appThi2 {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 22.1 * 2.5); /*animation*/
+    }
+  }
+  
+  @keyframes appFou2 {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 52.6 * 2); /*animation*/
+    }
+  }
+  
+  @keyframes app2 {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .dgBLock2:hover .text2 {
+    z-index: 2;
+    position: absolute;
+    margin: 0px 0px 300px 100px;
+    transform: rotate(0deg);
+    white-space: none;
+    
+    /* font-weight: 500;
+    font-size: 17px; */
+    
+    background-color: rgb(184, 185, 187);
+    border: #000000 ;
+    border-radius: 15px;
+    padding: 13px;
+  }
+  
+  
+  .dgBLock2:hover .proj2 {
+    font-size: 23px;
+  }
+
+
+
+
+  

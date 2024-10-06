@@ -1,0 +1,175 @@
+
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  .diagram {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+  }
+  
+  .dgBLock {
+    width: 20px;
+    margin: 0px 30px;
+    padding: 0px;
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    /* transition: all 2s; */
+  }
+  
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+  
+  .dgBLock:first-child .column {
+    background: #00ccff;
+    height: calc(350px / 100 * 45.3 * 2); /*45.3% but 2 for size*/
+    animation: appFir 2s 1;
+  }
+  
+  .dgBLock:nth-child(2) .column {
+    background: #6750fb;
+    height: calc(350px / 100 * 32.6 * 2); /*32.6% but 2 for size*/
+    animation: appSec 2s 1;
+  }
+  
+  .dgBLock:nth-child(3) .column {
+    background: #00ccff;
+    height: calc(350px / 100 * 14.7 * 3); /*14.7% but 3 for size*/
+    animation: appThi 2s 1;
+  }
+  
+  .dgBLock:last-child .column {
+    background: #6750fb;
+
+    height: calc(350px / 100 * 6.3 * 4); /*6.3% but 4 for size*/
+    animation: appFou 5s 1;
+
+
+
+  }
+  
+  .column span {
+    transform: rotate(-90deg);
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    animation: app 3s 1;
+    transition: all 1s;
+    padding: 0px 50px 0px 50px;
+    white-space: nowrap;
+  }
+  
+  .proj {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 1s;
+  }
+  
+  @keyframes appFir {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 45.3 * 2); /*animation*/
+      
+    }
+  }
+  
+  @keyframes appSec {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 32.6 * 2); /*animation*/
+    }
+  }
+  
+  @keyframes appThi {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 14.7 * 3); /*animation*/
+    }
+  }
+  
+  @keyframes appFou {
+    0% {
+      height: 0;
+    }
+    20% {
+      height: 0;
+    }
+    100% {
+      height: calc(350px / 100 * 6.3 * 4); /*animation*/
+    }
+  }
+  
+  @keyframes app {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  .dgBLock:hover .text {
+    z-index: 2;
+    position: absolute;
+    margin: 0px 0px 300px 100px;
+    transform: rotate(0deg);
+    white-space: none;
+    /* white-space: nowrap; */
+    
+    /* font-weight: 500;
+    font-size: 17px; */
+    
+    background-color: rgb(184, 185, 187);
+    border: #000000 ;
+    border-radius: 15px;
+    padding: 13px;
+  }
+
+  .dgBLock:active .text {
+    background-color: rgb(0, 74, 221);
+  }
+  
+  
+  .dgBLock:hover .proj {
+    font-size: 23px;
+  }
+
+
