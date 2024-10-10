@@ -34,7 +34,7 @@ body {
   background-position: 0 10px;
   background-size: 43px 57px;
   z-index: -1;
-  height: 4000px;
+  height: 1fr;
 
 
   /* overflow: hidden; */
@@ -42,6 +42,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+
+
+
+
 
 .FOR_TIME ,
 .FOR_TIME p {
