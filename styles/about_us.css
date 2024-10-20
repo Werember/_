@@ -29,7 +29,7 @@
 
 .main_div_content {
   border: 1px solid rgba(156, 147, 147, 0.5);
-  margin: 40px 120px 0px 120px;
+  margin: 40px 120px 30px 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -49,7 +49,6 @@
 }
 
 .main_div_content div {
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,6 +57,8 @@
 .ff {
   margin: 50px 170px 35px 170px;
   align-items: center;
+  border: solid rgba(0, 0, 0, 0);
+  border-radius: 200px;
 }
 
 /* .main_div_content img {

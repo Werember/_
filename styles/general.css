@@ -49,16 +49,18 @@ body {
 
 
 .FOR_TIME ,
-.FOR_TIME p {
+.FOR_TIME h2 {
   display: none;
 }
 
 @media all and (max-width: 1900px) {
   .FOR_TIME {
     display: flex;
-    justify-content: center;
-  
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
     margin: -100px -300px -100px -300px;
+    padding-top: 30vh;
     position: absolute;
     top: -1px;
     bottom: -1px;
@@ -67,9 +69,10 @@ body {
     background-color: rgb(59, 61, 61);
     z-index: 10000;
   }
-  .FOR_TIME p {
-    display: block;
-    margin-top: 300px;
+  .FOR_TIME h2 {
+    display: inline-block;
+    width: 1fr;
+    margin-top: 0px;
     font-size: 30px;
     font-weight: 600;
     color: #fff;

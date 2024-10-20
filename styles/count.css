@@ -116,8 +116,8 @@ main {
 
 .main_div_content_spell1 {
   height: 200px;
-  width: 1800px;
-  margin-left: -650px;
+  width: 1700px;
+  margin-left: -450px;
   display: flex;
   flex-direction: column;
   justify-content: end;

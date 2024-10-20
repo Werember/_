@@ -12,3 +12,35 @@
 }
 
 
+.div_content_welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  margin-top: 50px;
+  margin-left: 50vh;
+  width: 100vh;
+  min-width: 70vh;
+
+  background-color: rgb(0, 102, 255);
+  padding: 15px 40px 15px 50px;
+  border: solid rgba(0, 0, 139, 0);
+  border-radius: 500px;
+}
+
+.text_content_welcome * {
+  color: #fff;
+}
+
+.text_content_welcome h2 {
+  font-size: 4vh;
+}
+
+.text_content_welcome p {
+  font-size: 2vh;
+}
+
+.welcome_img {
+  height: 30vh;
+}
