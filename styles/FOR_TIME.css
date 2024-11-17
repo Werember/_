@@ -1,0 +1,30 @@
+
+
+
+.FOR_TIME_LINKS a{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.FOR_TIME_LINKS a .FOR_TIME_LINKS_TEXT{
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Расположить сверху */
+  left: 50%;
+  margin-left: -60px; /* Половина ширины */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.FOR_TIME_LINKS a:hover .FOR_TIME_LINKS_TEXT{
+  visibility: visible;
+  opacity: 1;
+}

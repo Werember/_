@@ -7,7 +7,12 @@
 
 .main_div_content_text {
   margin: 50px 0px 0px 0px;
-
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .main_div_content_quziz_cards {
@@ -37,6 +42,10 @@
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 20px;
+}
+
+.inf_about_cards p {
+  width: 240px;
 }
 
 .inf_about_cards button{

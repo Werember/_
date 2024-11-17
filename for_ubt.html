@@ -1,328 +1,395 @@
 <!DOCTYPE html>
 <html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' https://*; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; child-src 'none';"
+    />
+    <meta name="referrer" content="no-referrer" />
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://*; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; child-src 'none';">
-  <meta name="referrer" content="no-referrer">
+    <meta name="application-name" content="ServingStaff" />
+    <meta
+      name="description"
+      content="ServingStaff: Сіздің тамақтану нұсқаушыңыз ServingStaff — балаларға мектепте дұрыс тамақтану әдеттерін дамытуға көмектесетін платформа. Telegram арқылы кеңестер мен қолдау ұсынамыз."
+    />
+    <meta
+      name="keywords"
+      content="ключевое слово 1, ключевое слово 2, ключевое слово 3"
+    />
 
-  <meta name="application-name" content="ServingStaff">
-  <meta name="description" content="ServingStaff: Сіздің тамақтану нұсқаушыңыз ServingStaff — балаларға мектепте дұрыс тамақтану әдеттерін дамытуға көмектесетін платформа. Telegram арқылы кеңестер мен қолдау ұсынамыз.">
-  <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3">
+    <meta property="og:title" content="ServingStaff" />
+    <meta
+      property="og:description"
+      content="ServingStaff: Сіздің тамақтану бойынша нұсқаушыңыз ServingStaff — мектептердегі балаларға дұрыс тамақтану әдеттерін дамытуға көмектесетін платформа. Telegram арқылы біз дұрыс тамақтану бойынша кеңестер мен қолдау ұсынамыз. Бізге қосылыңыз және балаларға сау өмір салтын ұстануға көмектесіңіз!"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Werember/_/main/images/Staffy/Ss.jpg"
+    />
+    <meta property="og:url" content="https://github.com/Werember/_/" />
 
-  <meta property="og:title" content="ServingStaff">
-  <meta property="og:description" content="ServingStaff: Сіздің тамақтану бойынша нұсқаушыңыз ServingStaff — мектептердегі балаларға дұрыс тамақтану әдеттерін дамытуға көмектесетін платформа. Telegram арқылы біз дұрыс тамақтану бойынша кеңестер мен қолдау ұсынамыз. Бізге қосылыңыз және балаларға сау өмір салтын ұстануға көмектесіңіз!">
-  <meta property="og:image" content="https://raw.githubusercontent.com/Werember/_/main/images/Staffy/Ss.jpg">
-  <meta property="og:url" content="https://github.com/Werember/_/">
+    <meta name="geo.region" content="KZ" />
+    <meta name="geo.placename" content="Kazakhstan" />
 
-  <meta name="geo.region" content="KZ">
-  <meta name="geo.placename" content="Kazakhstan">
+    <meta name="author" content="beibik" />
+    <meta name="copyright" content="ServingStaff, 2024" />
 
-  <meta name="author" content="beibik">
-  <meta name="copyright" content="ServingStaff, 2024">
+    <!-- //////////// title /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- //////////// title /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <title>ServingStaff</title>
 
-  <title>ServingStaff</title>
+    <!-- //////////// icon /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- //////////// icon /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Иконка для всех браузеров -->
+    <link
+      rel="icon"
+      href="images/mini_log/icon_ico128x.ico"
+      type="image/x-icon"
+    />
+    <!-- Для Safari на устройствах Apple -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/mini_log/icon_180x.png"
+    />
+    <!-- Для Android -->
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="*"> -->
+    <!-- Для других типов изображений и разрешений -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="images/mini_log/icon_64x.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/mini_log/icon_32x.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/mini_log/icon_16x.png"
+    />
 
-  <!-- Иконка для всех браузеров -->
-  <link rel="icon" href="images/mini_log/icon_ico128x.ico" type="image/x-icon">
-  <!-- Для Safari на устройствах Apple -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/mini_log/icon_180x.png">
-  <!-- Для Android -->
-  <!-- <link rel="icon" type="image/png" sizes="192x192" href="*"> -->
-  <!-- Для других типов изображений и разрешений -->
-  <link rel="icon" type="image/png" sizes="64x64" href="images/mini_log/icon_64x.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/mini_log/icon_32x.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/mini_log/icon_16x.png">
+    <!-- //////////// styles /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- //////////// styles /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- styles AOS-->
+    <link rel="stylesheet" href="aos_animation/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
 
-  <!-- styles AOS-->
-  <link rel="stylesheet" href="aos_animation/aos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-  
-  <!-- styles -->
-  <link rel="stylesheet" href="styles/general.css" />
-  <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/for_ubt.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
-  
-  <!-- google font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap">
-</head>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/FOR_TIME.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/for_ubt.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 
-<body>
-  <div class="main_div">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap"
+    />
+  </head>
 
+  <body>
+    <div class="main_div">
+      <!-- header ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- nav -->
 
-    <!-- header ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <!-- nav -->
+      <header>
+        <div class="header_main_div">
+          <div class="header_main_div_left">
+            <a href="index.html">
+              <img src="images/icons/LOGO_Serving_Staff.png" alt="LOGO_Ss"
+            /></a>
 
-
-    <header>
-      <div class="header_main_div">
-
-        <div class="header_main_div_left">
-          <a href="index.html">
-            <img src="images/icons/LOGO_Serving_Staff.png" alt="LOGO_Ss" /></a>
-
-          <p class="location">Kazakhstan</p>
-        </div>
-
-
-        <div class="header_main_div_right">
-          <a href="faq.html" class="header_menu_bar_link_page">FAQ's</a>
-          <a href="quiz.html" class="header_menu_bar_link_page">QUIZ</a>
-          <a href="index.html" class="header_menu_bar_link_page active_page">For ҰБТ</a>
-          <a href="count.html" class="header_menu_bar_link_page">Есептер</a>
-          <a href="aobut_us.html" class="header_menu_bar_link_page">Туралы</a>
-
-          <div class="header_main_div_right_msg">
-            <a href="https://www.instagram.com/servingstaff" target="_blank">
-              <img class="instagram_icon msg" src="images/icons/instagram.png" alt="instagram_icon" /></a>
-
-            <a href="https://youtube.com/@ServingStaff" target="_blank">
-              <img class="youtube_icon msg" src="images/icons/youtube.png" alt="youtube_icon" /></a>
-
-            <a href="https://t.me/ServingStaff_bot" target="_blank">
-              <img class="telegram_icon msg" src="images/icons/telegram.png" alt="telegram_icon" /></a>
+            <p class="location">Kazakhstan</p>
           </div>
 
-          <a href="*">
-            <button class="from_header_button_log">
-              Log in
-              / Sing up
-            </button></a>
+          <div class="header_main_div_right">
+            <a href="faq.html" class="header_menu_bar_link_page">FAQ's</a>
+            <a href="quiz.html" class="header_menu_bar_link_page">QUIZ</a>
+            <a href="index.html" class="header_menu_bar_link_page active_page"
+              >For ҰБТ</a
+            >
+            <a href="count.html" class="header_menu_bar_link_page">Есептер</a>
+            <a href="aobut_us.html" class="header_menu_bar_link_page">Туралы</a>
 
-          <a href="*">
-            <img class="avatar msg" src="images/icons/av_acc_none.png" alt="...">
-          </a>
-        </div>
-      </div>
-      <div class="main_div___">
-        <p>
-          Біздің телеграм ботқа өту үшін төмендегі батырманы басыңыз.
-        </p>
-        <a href="*">
-          <button class="from_main_button___">ServingStaff</button></a>
-      </div>
-    </header>
-
-
-    <!-- main ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <!-- section -->
-
-
-    <main>
-      <div class="main_div_content_bckg_img">
-        <div class="main_div_content">
-          <h2>Дұрыс тамақтанудың ЕНТ-ға және оқу үлгеріміне әсері</h2>
-          <p>
-            Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып қана қоймай, зияткерлік қабілеттер мен оқу
-            үлгеріміне де оң ықпал етеді. Әсіресе, <strong>ЕНТ</strong> сияқты маңызды сынақтарға дайындалу кезінде
-            дұрыс тамақтанудың
-            рөлі ерекше. Зерттеулер көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу үлгерімі
-            төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін. Төменде дұрыс тамақтанудың негізгі артықшылықтары
-            келтірілген:
-          </p>
-
-          <ul class="main_div_content_ul">
-
-            <li>
-              <h3>Ми қызметін жақсарту</h3>
-              <p>
-                <strong>Миға</strong> қажетті қоректік заттар жеткіліксіз болса, адамның ойлау қабілеті баяулап, есте
-                сақтау қабілеті
-                төмендейді. <strong>Омега-3</strong>
-                май қышқылдары мен дәрумендер ми қызметін жақсартуға ықпал етеді.
-              </p>
-            </li>
-
-            <li>
-              <h3>Зейін мен концентрацияны арттыру</h3>
-              <p>
-                <strong>Жеңіл</strong> әрі теңгерімді таңғы <strong>ас</strong> ішкен адам күні бойы белсенді әрі жинақы
-                болады. <strong>Аш</strong> жүрген жағдайда
-                зейіннің шашырауы және жұмысқа қабілеттіліктің төмендеуі байқалады.
-              </p>
-            </li>
-
-            <li>
-              <h3>Энергия деңгейін тұрақты ұстау</h3>
-              <p>
-                Тұрақты тамақтану арқылы ағзаға қажетті энергияны үнемі жеткізіп отыруға болады. Әсіресе, ұзақ мерзімді
-                интеллектуалдық жүктемелер кезінде денеге қажетті <strong>энергия</strong> көзі қажет.
-              </p>
-            </li>
-
-            <li>
-              <h3>Аурулардың алдын алу</h3>
-              <p>
-                Құрамында <strong>дәрумендер</strong> мен минералдар бар тағамдарды тұрақты түрде тұтыну иммундық жүйені нығайтады, бұл
-                түрлі аурулардың алдын алуға көмектеседі. Аурулар оқу процесіне кері әсер етуі мүмкін.
-              </p>
-            </li>
-
-            <li>
-              <h3>Психологиялық тұрақтылық</h3>
-              <p>
-                Қант пен майдың шамадан тыс тұтынылуы көңіл-күйдің өзгеруіне және эмоционалдық тұрақсыздыққа әкелуі
-                мүмкін. Керісінше, пайдалы тағамдар адамды <strong>сабырлы</strong> әрі эмоционалды тұрақты етеді.
-              </p>
-            </li>
-          </ul>
-
-        </div>
-
-
-        <div class="blog_comments">
-          
-          <h2 class="blog_comments_title">
-            БІЗ ТУРАЛЫ ПІКІРЛЕР !
-          </h2>
-
-          <div class="left_com1">
-            <div class="main_div_content_blog_com1">
-                <div class="name_picture_div">
-                  <img src="images/icons/Person_Hannibal_001.jpg" alt="...">
-                  <h2>wertom_00</h2>
-                </div>
-                <p>
-                  Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып қана қоймай, зияткерлік қабілеттер мен оқу
-                  үлгеріміне де оң ықпал етеді. Әсіресе, <strong>ЕНТ</strong> сияқты маңызды сынақтарға дайындалу кезінде
-                  дұрыс тамақтанудың
-                  рөлі ерекше. Зерттеулер көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу үлгерімі
-                  төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін. Төменде дұрыс тамақтанудың негізгі артықшылықтары
-                  келтірілген:
-                </p>
-            </div>
-          </div>
-
-
-          <div class="right_com2">
-            <div class="main_div_content_blog_com2">
-                <div class="name_picture_div">
-                  <img src="images/icons/images.jfif" alt="...">
-                  <h2>Мама_Х1000</h2>
-                </div>
-                <p>
-                  Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып қана қоймай, зияткерлік қабілеттер мен оқу
-                  үлгеріміне де оң ықпал етеді. Әсіресе, <strong>ЕНТ</strong> сияқты маңызды сынақтарға дайындалу кезінде
-                  дұрыс тамақтанудың
-                  рөлі ерекше. Зерттеулер көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу үлгерімі
-                  төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін. Төменде дұрыс тамақтанудың негізгі артықшылықтары
-                  келтірілген:
-                </p>
-            </div>
-          </div>
-
-          <div class="left_com1">
-            <div class="main_div_content_blog_com1">
-                <div class="name_picture_div">
-                  <img src="images/icons/Person_Hannibal_001.jpg" alt="...">
-                  <h2>wertom_00</h2>
-                </div>
-                <p>
-                  Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып қана қоймай, зияткерлік қабілеттер мен оқу
-                  үлгеріміне де оң ықпал етеді. Әсіресе, <strong>ЕНТ</strong> сияқты маңызды сынақтарға дайындалу кезінде
-                  дұрыс тамақтанудың
-                  рөлі ерекше. Зерттеулер көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу үлгерімі
-                  төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін. Төменде дұрыс тамақтанудың негізгі артықшылықтары
-                  келтірілген:
-                </p>
-            </div>
-          </div>
-
-
-          <div class="right_com2">
-            <div class="main_div_content_blog_com2">
-                <div class="name_picture_div">
-                  <img src="images/icons/images.jfif" alt="...">
-                  <h2>Мама_Х1000</h2>
-                </div>
-                <p>
-                  Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып қана қоймай, зияткерлік қабілеттер мен оқу
-                  үлгеріміне де оң ықпал етеді. Әсіресе, <strong>ЕНТ</strong> сияқты маңызды сынақтарға дайындалу кезінде
-                  дұрыс тамақтанудың
-                  рөлі ерекше. Зерттеулер көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу үлгерімі
-                  төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін. Төменде дұрыс тамақтанудың негізгі артықшылықтары
-                  келтірілген:
-                </p>
-            </div>
-          </div>
-
-        </div>
-  
-      </div>
-    </main>
-
-
-
-
-  <!-- footer ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-  <footer>
-    <div class="footer_main_div_bckg">
-      <div class="footer_main_div">
-
-        <div class="section1_ s">
-          <a href="" class="footer_bar_txt">Жаңалықтар</a>
-          <a href="" class="footer_bar_txt">Біз туралы</a>
-          <a href="" class="footer_bar_txt">Мәселе туралы хабарлау</a>
-          <a href="" class="footer_bar_txt">Бизнес үшін</a>
-
-          <!-- imgx3 -->
-        </div>
-
-
-
-        <div class="section2_ s">
-          <h2 class="footer_middle_cr mr">Creator: Beibik</h2>
-          <a href="" class="footer_middle_gm mr">zharylkasyn101007@gmail.com</a>
-          <p class="footer_middle_ps mr">Барлық құқықтар қорғалған 2024</p>
-
-          <!-- etc -->
-        </div>
-
-
-
-        <div class="section3_ s">
-          <div class="header_main_div_right_msg footer_msg">
-            <a href="https://www.instagram.com/servingstaff" target="_blank">
-            <img class="instagram_icon msg" src="images/icons/instagram.png" alt="instagram_icon"/></a>
+            <div class="header_main_div_right_msg">
+              <a href="https://www.instagram.com/servingstaff" target="_blank">
+                <img
+                  class="instagram_icon msg"
+                  src="images/icons/instagram.png"
+                  alt="instagram_icon"
+              /></a>
 
               <a href="https://youtube.com/@ServingStaff" target="_blank">
-              <img class="youtube_icon msg" src="images/icons/youtube.png" alt="youtube_icon"/></a>
+                <img
+                  class="youtube_icon msg"
+                  src="images/icons/youtube.png"
+                  alt="youtube_icon"
+              /></a>
+
+              <a href="https://t.me/ServingStaff_bot" target="_blank">
+                <img
+                  class="telegram_icon msg"
+                  src="images/icons/telegram.png"
+                  alt="telegram_icon"
+              /></a>
+            </div>
+
+            <a href="#">
+							<button class="from_header_button_log">
+                Log in 
+                / Sing up
+              </button></a>
+
+            <a href="#">
+              <img class="avatar msg" src="images/icons/av_acc_none.png" alt="...">
+            </a>
+
+          </div>
+        </div>
+        <div class="main_div___">
+          <p>Біздің телеграм ботқа өту үшін төмендегі батырманы басыңыз.</p>
+          <a href="https://t.me/ServingStaff_bot" target="_blank">
+            <button class="from_main_button___">ServingStaff</button></a
+          >
+        </div>
+      </header>
+
+      <!-- main ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- section -->
+
+      <main>
+        <div class="main_div_content_bckg_img">
+          <div class="main_div_content" data-aos="fade-up">
+            <h2>Дұрыс тамақтанудың ҰБТ-ға және оқу үлгеріміне әсері</h2>
+            <p>
+              Дұрыс және теңгерімді тамақтану адам ағзасының жұмысын жақсартып
+              қана қоймай, зияткерлік қабілеттер мен оқу үлгеріміне де оң ықпал
+              етеді. Әсіресе, <strong>ҰБТ</strong> сияқты маңызды сынақтарға
+              дайындалу кезінде дұрыс тамақтанудың рөлі ерекше. Зерттеулер
+              көрсеткендей, дені сау әрі толыққанды тамақтанбаған адамдардың оқу
+              үлгерімі төмендеп, зейіні мен концентрациясы әлсіреуі мүмкін.
+              Төменде дұрыс тамақтанудың негізгі артықшылықтары келтірілген:
+            </p>
+
+            <ul class="main_div_content_ul">
+              <li>
+                <h3>Ми қызметін жақсарту</h3>
+                <p>
+                  <strong>Миға</strong> қажетті қоректік заттар жеткіліксіз
+                  болса, адамның ойлау қабілеті баяулап, есте сақтау қабілеті
+                  төмендейді. <strong>Омега-3</strong>
+                  май қышқылдары мен дәрумендер ми қызметін жақсартуға ықпал
+                  етеді.
+                </p>
+              </li>
+
+              <li>
+                <h3>Зейін мен концентрацияны арттыру</h3>
+                <p>
+                  <strong>Жеңіл</strong> әрі теңгерімді таңғы
+                  <strong>ас</strong> ішкен адам күні бойы белсенді әрі жинақы
+                  болады. <strong>Аш</strong> жүрген жағдайда зейіннің шашырауы
+                  және жұмысқа қабілеттіліктің төмендеуі байқалады.
+                </p>
+              </li>
+
+              <li>
+                <h3>Энергия деңгейін тұрақты ұстау</h3>
+                <p>
+                  Тұрақты тамақтану арқылы ағзаға қажетті энергияны үнемі
+                  жеткізіп отыруға болады. Әсіресе, ұзақ мерзімді
+                  интеллектуалдық жүктемелер кезінде денеге қажетті
+                  <strong>энергия</strong> көзі қажет.
+                </p>
+              </li>
+
+              <li>
+                <h3>Аурулардың алдын алу</h3>
+                <p>
+                  Құрамында <strong>дәрумендер</strong> мен минералдар бар
+                  тағамдарды тұрақты түрде тұтыну иммундық жүйені нығайтады, бұл
+                  түрлі аурулардың алдын алуға көмектеседі. Аурулар оқу
+                  процесіне кері әсер етуі мүмкін.
+                </p>
+              </li>
+
+              <li>
+                <h3>Психологиялық тұрақтылық</h3>
+                <p>
+                  Қант пен майдың шамадан тыс тұтынылуы көңіл-күйдің өзгеруіне
+                  және эмоционалдық тұрақсыздыққа әкелуі мүмкін. Керісінше,
+                  пайдалы тағамдар адамды <strong>сабырлы</strong> әрі
+                  эмоционалды тұрақты етеді.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="blog_comments">
+            <h2 class="blog_comments_title">БІЗ ТУРАЛЫ ПІКІРЛЕР !</h2>
+
+            <div class="left_com1" data-aos="slide-right">
+              <div class="main_div_content_blog_com1">
+                <div class="name_picture_div">
+                  <img src="images/icons/Person_Hannibal_001.jpg" alt="..." />
+                  <h2>wertom_00</h2>
+                </div>
+                <p>
+                  Мен осы бот арқылы дұрыс тамақтану жоспарын алып,
+                  денсаулығымды жақсарттым. Бірнеше айдан кейін, энергиям
+                  көбейіп, зейінім артып, ҰБТ-ға дайындалуда да тиімділік
+                  сезіндім. Бұрын тамақтану режимі ретсіз еді, бірақ боттың
+                  көмегімен бәрі оңай болып кетті. Денсаулығым да жақсарды,
+                  өзімді сергек сезінемін.
+                </p>
+              </div>
+            </div>
+
+            <div class="right_com2" data-aos="slide-left">
+              <div class="main_div_content_blog_com2">
+                <div class="name_picture_div">
+                  <img src="images/icons/images.jfif" alt="..." />
+                  <h2>Gulnura_1985</h2>
+                </div>
+                <p>
+                  Менің қызыма да осы бот көмектесті. Оның акнесі бар еді, бірақ
+                  дұрыс тамақтану арқылы терісі жақсара бастады. Сондай-ақ,
+                  ҰБТ-ға дайындалу кезінде оның оқу үлгерімі де көтерілді. Оның
+                  көңіл-күйі тұрақты болды, өйткені біз оның тамақтануын бақылап
+                  отырдық. Бұл біздің отбасы үшін өте пайдалы болды.
+                </p>
+              </div>
+            </div>
+
+            <div class="left_com1" data-aos="slide-right">
+              <div class="main_div_content_blog_com1">
+                <div class="name_picture_div">
+                  <img src="images/icons/Person_Hannibal_001.jpg" alt="..." />
+                  <h2>wertom_00</h2>
+                </div>
+                <p>
+                  Иә, мен де солай, дұрыс тамақтанудың ми мен денсаулыққа
+                  қаншалықты пайдалы екенін түсіндім. Менің де нәтижелерім
+                  жақсарды. Сол үшін осындай сервис өте маңызды. Ал сіздің
+                  қызыңыздың жағдайын естігенде, мен де балалардың жақсы
+                  тамақтануына көбірек көңіл бөле бастадым.
+                </p>
+              </div>
+            </div>
+
+            <div class="right_com2" data-aos="slide-left">
+              <div class="main_div_content_blog_com2">
+                <div class="name_picture_div">
+                  <img src="images/Staffy/Ss.jpg" alt="..." />
+                  <h2>Serving_staff</h2>
+                </div>
+                <p>
+                  Біз балалар мен ата-аналар үшін осындай жобаны іске
+                  асырғанымызға қуаныштымыз. Өзгерістерді көргендеріңіз біз үшін
+                  үлкен жетістік. Осы жолмен, балалардың денсаулығын және оқу
+                  үлгерімін жақсартуға қосқан үлесімізді бағалап отырмыз.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <footer>
+        <div class="footer_main_div_bckg">
+          <div class="footer_main_div">
+
+            <div class="section1_ s FOR_TIME_LINKS">
+              <a href="#" class="footer_bar_txt">Жаңалықтар  <span class="FOR_TIME_LINKS_TEXT">Әлі дайын емес</span> </a>
+              <a href="#" class="footer_bar_txt">Біз туралы <span class="FOR_TIME_LINKS_TEXT">Әлі дайын емес</span> </a>
+              <a href="#" class="footer_bar_txt">Мәселе туралы хабарлау <span class="FOR_TIME_LINKS_TEXT">Әлі дайын емес</span> </a>
+              <a href="#" class="footer_bar_txt">Бизнес үшін <span class="FOR_TIME_LINKS_TEXT">Әлі дайын емес</span> </a>
+
+              <!-- imgx3 -->
+            </div>
+
+            <div class="section2_ s">
+              <h2 class="footer_middle_cr mr">Creator: Beibik</h2>
+              <a href="" class="footer_middle_gm mr"
+                >zharylkasyn101007@gmail.com</a
+              >
+              <p class="footer_middle_ps mr">Барлық құқықтар қорғалған 2024</p>
+
+              <!-- etc -->
+            </div>
+
+            <div class="section3_ s">
+              <div class="header_main_div_right_msg footer_msg">
+                <a
+                  href="https://www.instagram.com/servingstaff"
+                  target="_blank"
+                >
+                  <img
+                    class="instagram_icon msg"
+                    src="images/icons/instagram.png"
+                    alt="instagram_icon"
+                /></a>
+
+                <a href="https://youtube.com/@ServingStaff" target="_blank">
+                  <img
+                    class="youtube_icon msg"
+                    src="images/icons/youtube.png"
+                    alt="youtube_icon"
+                /></a>
 
                 <a href="https://t.me/ServingStaff_bot" target="_blank">
-              <img class="telegram_icon msg" src="images/icons/telegram.png" alt="telegram_icon"/></a>
+                  <img
+                    class="telegram_icon msg"
+                    src="images/icons/telegram.png"
+                    alt="telegram_icon"
+                /></a>
+              </div>
+
+              <div class="header_main_div_left footer_logo">
+                <a href="index.html">
+                  <img
+                    src="images/icons/LOGO_Serving_Staff.png"
+                    alt="LOGO_Ss"
+                  />
+                </a>
+              </div>
+
+              <!-- serv -->
+            </div>
           </div>
-
-
-          <div class="header_main_div_left footer_logo">
-            <a href="index.html">
-            <img src="images/icons/LOGO_Serving_Staff.png" alt="LOGO_Ss"/>
-            </a>
-          </div>
-
-          <!-- serv -->
         </div>
-
-      </div>
+      </footer>
     </div>
-  </footer>
-
-  </div>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="aos_animation/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200, 
+          easing: 'ease', 
+          mirror: true,
+        });
+    </script>
+  </body>
 </html>

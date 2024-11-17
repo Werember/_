@@ -29,6 +29,10 @@
   border-radius: 500px;
 }
 
+.text_content_welcome {
+  padding-left: 50px;
+}
+
 .text_content_welcome * {
   color: #fff;
 }
@@ -43,4 +47,5 @@
 
 .welcome_img {
   height: 30vh;
+  padding-right: 20px;
 }
