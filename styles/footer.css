@@ -1,7 +1,8 @@
 
 .footer_main_div_bckg {
     background-color: rgb(0, 44, 190);
-    width: 1900px;
+    /* width: 1900px; */
+    width: 195vh;
     height: 200px;
 
     position: relative;
