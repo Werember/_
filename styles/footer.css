@@ -2,15 +2,15 @@
 .footer_main_div_bckg {
     background-color: rgb(0, 44, 190);
     /* width: 1900px; */
-    width: 195vh;
+    width: 99.5vw;
     height: 200px;
 
     position: relative;
 
     /* top: auto; */
     /* bottom: 20px; */
-    left: -170px;
-    right: -150px;
+    left: -7.5vw;
+    right: 0vw;
 }
 
 .footer_main_div {
