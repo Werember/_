@@ -2,14 +2,14 @@
 .footer_main_div_bckg {
     background-color: rgb(0, 44, 190);
     /* width: 1900px; */
-    width: 99.5vw;
+    width: 100vw;
     height: 200px;
 
     position: relative;
 
     /* top: auto; */
     /* bottom: 20px; */
-    left: -7.5vw;
+    left: -8vw;
     right: 0vw;
 }
 
