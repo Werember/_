@@ -4,7 +4,7 @@
   display: none;
 }
 
-@media all and (max-width: 1900px) {
+@media all and (max-width: 1199px) {
   .FOR_TIME {
     display: flex;
     flex-direction: column;

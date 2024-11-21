@@ -12,6 +12,13 @@
     left: -9.5vw;
     right: 0vw;
 }
+@media (max-width: 1450px) {
+    .footer_main_div_bckg {
+        width: 1fr;
+        left: -5vw;
+        right: -4vw;
+    }
+  }
 
 .footer_main_div {
     display: flex;

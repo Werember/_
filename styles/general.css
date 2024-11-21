@@ -25,6 +25,11 @@ body {
   overflow-x: hidden; /* скрывает горизонтальную прокрутку */
 
 }
+@media (max-width: 1450px) {
+  body {
+    margin: 50px 50px 0px 50px;
+  }
+}
 
 
 
