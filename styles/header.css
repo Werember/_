@@ -1,10 +1,17 @@
 
+<<<<<<< HEAD
 
 
 .header_main_div {
   display: flex;
   justify-content: space-between;
   
+=======
+.header_main_div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+>>>>>>> 5dc9ad6 (second way)
 }
 
 .location {

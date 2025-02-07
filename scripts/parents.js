@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach( button =>{
-    button.addEventListener('click',()=>{
-        const faq = button.nextElementSibling;
-        const icon = button.children[1];
-
-        faq.classList.toggle('show');
-        icon.classList.toggle('rotate');
-    })
-} )
-=======
-// const buttons = document.querySelectorAll('button');
-
-// buttons.forEach( button =>{
-//     button.addEventListener('click',()=>{
-//         const faq = button.nextElementSibling;
-//         const icon = button.children[1];
-
-//         faq.classList.toggle('show');
-//         icon.classList.toggle('rotate');
-//     })
-// } )
-
-
 const buttons = document.querySelectorAll('.question button');
 
 buttons.forEach(button => {
@@ -47,4 +21,3 @@ buttons.forEach(button => {
         icon.classList.toggle('rotate');
     });
 });
->>>>>>> 5dc9ad6 (second way)
